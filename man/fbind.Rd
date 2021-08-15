@@ -2,8 +2,7 @@
 % Please edit documentation in R/fbind.R
 \name{fbind}
 \alias{fbind}
-\title{Bind two factors
-Create a new factor from two existing factors, where the new factor's
+\title{Create a new factor from two existing factors, where the new factor's
 are the union of the levels of the input factors.}
 \usage{
 fbind(a, b)
@@ -17,7 +16,6 @@ fbind(a, b)
 factor
 }
 \description{
-Bind two factors
 Create a new factor from two existing factors, where the new factor's
 are the union of the levels of the input factors.
 }

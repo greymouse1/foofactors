@@ -1,4 +1,3 @@
-#' Bind two factors
 #' Create a new factor from two existing factors, where the new factor's
 #' are the union of the levels of the input factors.
 #'
