@@ -2,8 +2,7 @@
 % Please edit documentation in R/fbind.R
 \name{fbind}
 \alias{fbind}
-\title{Create a new factor from two existing factors, where the new factor's
-are the union of the levels of the input factors.}
+\title{\code{fbind} merges two factors}
 \usage{
 fbind(a, b)
 }
@@ -18,6 +17,9 @@ factor
 \description{
 Create a new factor from two existing factors, where the new factor's
 are the union of the levels of the input factors.
+}
+\details{
+This part is just to try out how comments work
 }
 \examples{
 fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
