@@ -6,12 +6,16 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of foofactors is to merge two factors into one.
+This package is made as final project for Spatial data with R. It has
+function “storetrack3” which creates object of a class “mytrack” and is
+used to store name, timestamps, CRS and coordinates of a track. In
+addition to this, object of a class “myclass” have print, plot and
+summary methods and one additional method for calculating distance of
+the track called “distance2”.
 
 ## Installation
 
-You can install the released version of foofactors from
-[CRAN](https://CRAN.R-project.org) with:
+You can install this package with:
 
 ``` r
 install.packages("foofactors")
@@ -19,36 +23,63 @@ install.packages("foofactors")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This example shows how to create object of a type “mytrack”. We have
+coordinates of two cities, Madrid and Kyiv:
 
 ``` r
 library(foofactors)
-## basic example code
+test_object <- storetracks3("Madrid-Kyiv", c("2009-12-25 18:39:21 CST",
+                                              "2009-12-25 18:39:31 CST"),
+                              4326,
+                              data.frame(lon=c(-3.761989,30.415929),lat=c(40.415190,50.470800))
+  )
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+In the above example, 4326 is code for WGS84 Geoid. Another code can be
+used as well. We can calculate distance with or without using S2. To use
+S2 we type:
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+distance2(test_object,TRUE)
+#> Distance of this route is
+#> 2859594 [m]
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/master/examples>.
+Or for distance without S2 we type:
 
-You can also embed plots, for example:
+``` r
+distance2(test_object,FALSE)
+#> Distance of this route is
+#> Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+#> 2866200 [m]
+```
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+Package also uses few of the methods generate from existing generic
+functions, for example plot, print and summary.
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+### “print” method prints information about what is stored in the object’s slots
+
+``` r
+print(test_object)
+#> Name of this object is Madrid-Kyiv 
+#> Timestamps are  2009-12-25 18:39:21 CST 2009-12-25 18:39:31 CST 
+#> CRS used is  4326 
+#>         lon      lat
+#> 1 -3.761989 40.41519
+#> 2 30.415929 50.47080
+```
+
+### “summary” method will summarize how many points we have stored in our object
+
+``` r
+summary(test_object)
+#> Object has  2  coordinates.
+```
+
+### “plot” method plots line graph, with the line connecting subsequent points.
+
+``` r
+plot(test_object)
+```
+
+<img src="man/figures/README-example6-1.png" width="100%" />
