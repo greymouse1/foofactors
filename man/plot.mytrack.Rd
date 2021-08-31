@@ -2,7 +2,7 @@
 % Please edit documentation in R/storetracks.R
 \name{plot.mytrack}
 \alias{plot.mytrack}
-\title{\code{plot} method for class \code{mytrack}}
+\title{\code{\link{plot}} method for class \code{mytrack}}
 \usage{
 \method{plot}{mytrack}(x, y, ...)
 }
@@ -18,7 +18,7 @@ Plot in Cartesian xy system where Longitude is plotted on x and
 latitude is plotted on y
 }
 \description{
-\code{plot} method for class \code{mytrack}
+\code{\link{plot}} method for class \code{mytrack}
 }
 \examples{
 \dontrun{

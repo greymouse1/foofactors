@@ -2,7 +2,7 @@
 % Please edit documentation in R/multitracks.R
 \name{print.multitracks}
 \alias{print.multitracks}
-\title{\code{print} method for class \code{multitracks}}
+\title{\code{\link{print}} method for class \code{multitracks}}
 \usage{
 \method{print}{multitracks}(x, ...)
 }
@@ -15,7 +15,7 @@
 prints a list of all tracks in the container
 }
 \description{
-\code{print} method for class \code{multitracks}
+\code{\link{print}} method for class \code{multitracks}
 }
 \examples{
 \dontrun{

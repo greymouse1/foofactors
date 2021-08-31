@@ -2,7 +2,7 @@
 % Please edit documentation in R/storetracks.R
 \name{print.mytrack}
 \alias{print.mytrack}
-\title{\code{print} method for class \code{mytrack}}
+\title{\code{\link{print}} method for class \code{mytrack}}
 \usage{
 \method{print}{mytrack}(x, ...)
 }
@@ -15,7 +15,7 @@
 Prints elements of object of a class \code{mytrack}
 }
 \description{
-\code{print} method for class \code{mytrack}
+\code{\link{print}} method for class \code{mytrack}
 }
 \examples{
 \dontrun{

@@ -2,7 +2,7 @@
 % Please edit documentation in R/storetracks.R
 \name{summary.mytrack}
 \alias{summary.mytrack}
-\title{\code{summary} method for class \code{mytrack}}
+\title{\code{\link{summary}} method for class \code{mytrack}}
 \usage{
 \method{summary}{mytrack}(object, ...)
 }
@@ -15,7 +15,7 @@
 Prints summary of objects of a class \code{mytrack}
 }
 \description{
-\code{summary} method for class \code{mytrack}
+\code{\link{summary}} method for class \code{mytrack}
 }
 \examples{
 \dontrun{

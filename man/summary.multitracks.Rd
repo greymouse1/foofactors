@@ -2,7 +2,7 @@
 % Please edit documentation in R/multitracks.R
 \name{summary.multitracks}
 \alias{summary.multitracks}
-\title{\code{summary} method for class \code{multitracks}}
+\title{\code{\link{summary}} method for class \code{multitracks}}
 \usage{
 \method{summary}{multitracks}(object, ...)
 }
@@ -15,7 +15,7 @@
 gives summary of all tracks in the container
 }
 \description{
-\code{summary} method for class \code{multitracks}
+\code{\link{summary}} method for class \code{multitracks}
 }
 \examples{
 \dontrun{
