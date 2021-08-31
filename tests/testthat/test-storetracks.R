@@ -1,13 +1,15 @@
 test_that("Test that function storetrack is creating object of a class mytrack
           with slots for my_name of class character, my_time of class character,
           my_crs of class numeric and my_coords of class data.frame", {
-            test_object <- storetracks3("Test track", c("2009-12-25 18:39:21 CST",
+            test_object <- storetracks("Test track", c("2009-12-25 18:39:21 CST",
                                                         "2009-12-25 18:39:31 CST",
                                                         "2009-12-25 18:39:41 CST"),
                                         4326,
                                         data.frame(lon=c(11,12,13),lat=c(14,15,16))
 
             )
+
+            # test classes and content of objects is identical
             expect_identical(class(test_object),"mytrack")
             expect_identical(class(test_object$my_name),"character")
             expect_identical(class(test_object$my_time),"character")

@@ -3,9 +3,10 @@ Type: Package
 Title: Foofactors package
 Version: 0.1.0
 Author: NG
-Maintainer: <ng@gmail.com>
-Description: This is my package.
-    This is second line in description.
+Maintainer: <ngrlj@uni-muenster.de>
+Description: This is package created as a final project for Spatial Data with R
+    It is consisted of two functions and several accompanying methods. Function "storetracks"
+    is used to crea.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -20,4 +21,5 @@ Imports:
     purrr,
     methods,
     utils,
-    tidyr
+    tidyr,
+    hash
