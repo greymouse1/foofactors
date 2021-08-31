@@ -19,7 +19,7 @@ storetracks <- function(name,time,crs,coordinates) {
 }
 
 
-#' \code{print} method for class \code{mytrack}
+#' \code{\link{print}} method for class \code{mytrack}
 #'
 #' @param x object of a class \code{mytrack}
 #' @param ... further arguments passed to or from other methods.
@@ -38,7 +38,7 @@ print.mytrack <- function(x, ...) {
 }
 
 
-#' \code{summary} method for class \code{mytrack}
+#' \code{\link{summary}} method for class \code{mytrack}
 #'
 #' @param object object of a class \code{mytrack}
 #' @param ... further arguments passed to or from other methods.
@@ -54,7 +54,7 @@ cat("Object has ", nrow(object$my_coords), " coordinates." )
 }
 
 
-#' \code{plot} method for class \code{mytrack}
+#' \code{\link{plot}} method for class \code{mytrack}
 #'
 #' @param x Object of a class \code{mytrack}
 #' @param y Not used

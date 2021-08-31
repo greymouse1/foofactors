@@ -31,7 +31,7 @@ addlist <- function(existing_list,new_line) {
   UseMethod("addlist")
 }
 
-#' \code{print} method for class \code{multitracks}
+#' \code{\link{print}} method for class \code{multitracks}
 #'
 #' @param x object of class \code{multitracks}
 #' @param ... further arguments passed to or from other methods.
@@ -50,7 +50,7 @@ print.multitracks <- function(x, ...) {
   }
 }
 
-#' \code{summary} method for class \code{multitracks}
+#' \code{\link{summary}} method for class \code{multitracks}
 #'
 #' @param object object of class \code{multitracks}
 #' @param ... further arguments passed to or from other methods.
