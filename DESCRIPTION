@@ -6,7 +6,12 @@ Author: NG
 Maintainer: <ngrlj@uni-muenster.de>
 Description: This is package created as a final project for Spatial Data with R
     It is consisted of two functions and several accompanying methods. Function "storetracks"
-    is used to crea.
+    is used to create object of a class "mytrack" which holds lines defined by coordinates and
+    accompanying metadata. There are three generic methods for this class (print, plot and summary)
+    and one made especially for calculating distance of a track. Second function "multitracks" is
+    used to create object of a class "multitracks" which acts as a container of multiple objects
+    of a "mytrack" class. There are two generics (print and summary) and one additional function
+    which is used to add a "mytrack" object to existing "multitracks" object.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
